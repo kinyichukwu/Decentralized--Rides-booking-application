@@ -81,8 +81,8 @@ export const DriverContextProvider = ({ children }) => {
         where("uid", "==", data?.driverId)
       );
       const unsub = await onSnapshot(q, (querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-          setDriverDetails(doc.data());
+        querySnapshot?.forEach((doc) => {
+          setDriverDetails(doc?.data());
         });
       });
   

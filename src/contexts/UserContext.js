@@ -30,8 +30,8 @@ const UserProvider = ({ children }) => {
     const getUser = async () => {
       setUser(null);
       onAuthStateChanged(auth, async (data) => {
-        const signUpDate = new Date(auth.currentUser.metadata.creationTime);
-        const signUpTime = new Date(auth.currentUser.metadata.creationTime);
+        const signUpDate = new Date();
+        const signUpTime = new Date();
         const lastsignInTime = Timestamp.now();
         if (data) {
           try {

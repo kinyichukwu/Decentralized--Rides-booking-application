@@ -23,7 +23,7 @@ const Ride = ({ from, to, price, status, time, dName, keyVal }) => {
       </div>
       <div className="payment">
         <p>Payment Method:</p>
-        <h3>Rajlo Bucks</h3>
+        <h3>Celo</h3>
       </div>
       <div className="driver">
         <p>Driver:</p>

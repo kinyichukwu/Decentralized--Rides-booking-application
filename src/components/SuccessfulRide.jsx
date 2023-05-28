@@ -13,9 +13,6 @@ const SuccessfulRide = () => {
             <h1>Thanks for your order</h1>
             <p>#order 1392</p>
           </div>
-          <div className="success--button">
-            <p>Pay Via debit card &#8594;</p>
-          </div>
         </div>
       </div>
     </div>

@@ -89,11 +89,11 @@ function SignIn() {
   };
 
   const onSignInSubmit = async (e) => {
-    e.preventDefault();
+    e?.preventDefault();
     if ((phoneNumber === "") | null) {
       return toast.error("Phone Number is required to sign in...");
     } else if (phoneNumber.includes(" ")) {
-      setPhoneNumber(phoneNumber.replaceAll(" ", ""));
+      setPhoneNumber(phoneNumber?.replaceAll(" ", ""));
     } else if (!registeredPhone) {
       return toast.error(
         "Phone Number not linked to any Account. Click on Signup to Register!"
